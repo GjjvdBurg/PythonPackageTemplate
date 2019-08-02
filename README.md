@@ -6,7 +6,7 @@ template directory for a new Python package. The generated package uses
 [Travis](https://travis-ci.org/) for continuous integration, 
 [Sphinx](https://www.sphinx-doc.org/en/master/index.html) with 
 [autodoc](https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html) 
-and [Read the Docs](https://readthedocs.org/), and 
+and [Read the Docs](https://readthedocs.org/) for documentation, and 
 [Green](https://github.com/CleanCut/green) for unit testing. It also comes 
 with a handy Makefile that ties everything together.
 
@@ -46,3 +46,8 @@ and creates the following package structure:
 ├── README.md
 └── setup.py
 ```
+
+**Note:** The generated package doesn't yet fully use Poetry for packaging and 
+publishing the Python package and instead relies on a separate ``setup.py`` 
+and a generated ``requirements.txt``. Doing all this using Poetry is planned 
+for the future.
